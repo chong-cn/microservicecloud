@@ -15,8 +15,8 @@ import java.util.List;
  * @Date: 2019-07-02 09:55
  */
 @RestController
-@RequestMapping("/dept")
-public class DeptController {
+@RequestMapping("/provider/dept")
+public class DeptProviderController {
 
     @Autowired
     private DeptService deptService;
