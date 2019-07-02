@@ -25,10 +25,12 @@ public class DataSourceConfig extends HikariConfig {
     @Primary
     @Qualifier("primaryDataSource")
     public DataSource primaryDataSource() {
-        logger.info("数据库连接池：连接成功！");
+        logger.info("数据源连接： 成功");
 
         return new HikariDataSource(this);
 
 
     }
+
 }
+
