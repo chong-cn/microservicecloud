@@ -22,7 +22,9 @@
         <module>microservicecloud-api</module>
         <module>microservicecloud-provider-dept</module>
         <module>microservicecloud-consumer-dept</module>
-        <module>microservicecloud-eureka</module>
+        <module>microservicecloud-eureka_01</module>
+        <module>microservicecloud-eureka_02</module>
+        <module>microservicecloud-eureka_03</module>
     </modules>
 
 
