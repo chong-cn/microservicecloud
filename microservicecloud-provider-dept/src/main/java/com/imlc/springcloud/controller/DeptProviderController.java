@@ -46,7 +46,7 @@ public class DeptProviderController {
     public Object dicorvery() {
         List<String> list = client.getServices();
 
-        List<ServiceInstance> srvList = client.getInstances("MICROSERVICECLOUD_DEPT");
+        List<ServiceInstance> srvList = client.getInstances("MICROSERVICECLOUD-DEPT");
         for (ServiceInstance server : srvList) {
             logger.info(server.getServiceId() + "\t" + server.getHost() + "\t" + server.getPort() + "\t" + server.getUri());
         }
