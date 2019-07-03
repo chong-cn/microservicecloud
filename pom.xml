@@ -20,7 +20,7 @@
 
     <modules>
         <module>microservicecloud-api</module>
-        <module>microservicecloud-provider-dept</module>
+        <module>microservicecloud-provider-dept-01</module>
         <module>microservicecloud-consumer-dept</module>
         <module>microservicecloud-eureka_01</module>
         <module>microservicecloud-eureka_02</module>
