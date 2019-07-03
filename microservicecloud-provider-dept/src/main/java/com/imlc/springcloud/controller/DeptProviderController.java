@@ -26,22 +26,22 @@ public class DeptProviderController {
     @Autowired
     private DiscoveryClient client;
 
-    @RequestMapping(value = "/provider/dept/add", method = RequestMethod.POST)
+    @RequestMapping(value = "/dept/add", method = RequestMethod.POST)
     public boolean addDept(@RequestBody DeptEntity deptEntity) {
         return deptService.addDept(deptEntity);
     }
 
-    @RequestMapping(value = "/provider/dept/get/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/dept/get/{id}", method = RequestMethod.GET)
     public DeptEntity getDeptById(@PathVariable("id") Long id) {
         return deptService.getDeptById(id);
     }
 
-    @RequestMapping(value = "/provider/dept/list", method = RequestMethod.GET )
+    @RequestMapping(value = "/dept/list", method = RequestMethod.GET )
     public List<DeptEntity> getDeptList() {
         return deptService.getDeptList();
     }
 
-    @RequestMapping("/provider/dept/discovery")
+    @RequestMapping("/dept/discovery")
     public Object dicorvery() {
         List<String> list = client.getServices();
 
