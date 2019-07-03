@@ -18,7 +18,6 @@ import java.util.List;
  * @Date: 2019-07-02 09:55
  */
 @RestController
-@RequestMapping("/provider/dept")
 public class DeptProviderController {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -27,22 +26,22 @@ public class DeptProviderController {
     @Autowired
     private DiscoveryClient client;
 
-    @RequestMapping(value = "/add", method = RequestMethod.POST)
+    @RequestMapping(value = "/provider/dept/add", method = RequestMethod.POST)
     public boolean addDept(@RequestBody DeptEntity deptEntity) {
         return deptService.addDept(deptEntity);
     }
 
-    @RequestMapping(value = "/get/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/provider/dept/get/{id}", method = RequestMethod.GET)
     public DeptEntity getDeptById(@PathVariable("id") Long id) {
         return deptService.getDeptById(id);
     }
 
-    @RequestMapping(value = "/list", method = RequestMethod.GET )
+    @RequestMapping(value = "/provider/dept/list", method = RequestMethod.GET )
     public List<DeptEntity> getDeptList() {
         return deptService.getDeptList();
     }
 
-    @RequestMapping("/discovery")
+    @RequestMapping("/provider/dept/discovery")
     public Object dicorvery() {
         List<String> list = client.getServices();
 

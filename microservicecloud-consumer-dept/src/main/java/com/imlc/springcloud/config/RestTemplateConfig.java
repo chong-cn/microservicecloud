@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.client.ClientHttpRequestFactory;
 import org.springframework.http.client.SimpleClientHttpRequestFactory;
+import org.springframework.web.client.RestTemplate;
 
 /**
  * @Auther: L.C
@@ -14,8 +15,13 @@ import org.springframework.http.client.SimpleClientHttpRequestFactory;
 public class RestTemplateConfig {
 
     @Bean
-    public org.springframework.web.client.RestTemplate restTemplate(ClientHttpRequestFactory factory) {
-        return new org.springframework.web.client.RestTemplate(factory);
+    public ClientHttpRequestFactory simpleClientHttpRequestFactory() {
+        SimpleClientHttpRequestFactory factory = new SimpleClientHttpRequestFactory();
+        // ms
+        factory.setReadTimeout(5000);
+        // ms
+        factory.setConnectTimeout(5000);
+        return factory;
     }
 
     /**
@@ -28,12 +34,7 @@ public class RestTemplateConfig {
      */
     @Bean
     @LoadBalanced
-    public ClientHttpRequestFactory simpleClientHttpRequestFactory() {
-        SimpleClientHttpRequestFactory factory = new SimpleClientHttpRequestFactory();
-        // ms
-        factory.setReadTimeout(5000);
-        // ms
-        factory.setConnectTimeout(5000);
-        return factory;
+    public RestTemplate restTemplate(ClientHttpRequestFactory factory) {
+        return new RestTemplate(factory);
     }
 }

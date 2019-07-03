@@ -16,7 +16,6 @@ import java.util.List;
  * @Date: 2019-07-02 12:21
  */
 @RestController
-@RequestMapping("/consumer/dept")
 public class DeptConsumerController {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -24,31 +23,35 @@ public class DeptConsumerController {
     private RestTemplate restTemplate;
 
     // 原始调用
-//    private static final String REST_URL_PRIFIX = "http://localhost:8001/provider/dept";
+//    private static final String REST_URL_PRIFIX = "http://localhost:8001";
     private static final String REST_URL_PRIFIX = "http://MICROSERVICECLOUD-DEPT";
 
-    @RequestMapping(value = "/add")
+    @RequestMapping(value = "/consumer/dept/add")
     public boolean addDept(DeptEntity deptEntity) {
-        return restTemplate.postForObject(REST_URL_PRIFIX + "/provider/dept/add", deptEntity, Boolean.class);
+        String url = REST_URL_PRIFIX + "/provider/dept/provider/dept/add";
+        return restTemplate.postForObject(url, deptEntity, Boolean.class);
     }
 
-    @RequestMapping(value = "/get/{id}")
+    @RequestMapping(value = "/consumer/dept/get/{id}")
     public DeptEntity getDept(@PathVariable("id") Long id) {
-        return restTemplate.getForObject(REST_URL_PRIFIX + "/provider/dept/get/" + id , DeptEntity.class);
+        String url = REST_URL_PRIFIX + "/provider/dept/provider/dept/get/" + id;
+        return restTemplate.getForObject(url, DeptEntity.class);
     }
 
     @SuppressWarnings("unchecked")
-    @RequestMapping(value = "/list")
+    @RequestMapping(value = "/consumer/dept/list")
     public List<DeptEntity> getDeptList() {
         logger.info("部门消费者获取部门提供者列表");
-        return restTemplate.getForObject(REST_URL_PRIFIX + "/provider/dept/list", List.class);
+        String url = REST_URL_PRIFIX + "/provider/dept/list";
+        logger.info("请求的URL： " + url);
+        return restTemplate.getForObject(url, List.class);
     }
 
-    @RequestMapping(value = "/dicovery")
+    @RequestMapping(value = "/consumer/dept/dicovery")
     public Object discovery() {
-        return restTemplate.getForObject(REST_URL_PRIFIX + "/provider/dept/discovery", List.class);
+        String url = REST_URL_PRIFIX + "/provider/dept/discovery";
+        return restTemplate.getForObject(url, Object.class);
     }
-
 
 
 }
