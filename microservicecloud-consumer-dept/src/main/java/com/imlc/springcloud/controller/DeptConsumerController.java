@@ -28,13 +28,13 @@ public class DeptConsumerController {
 
     @RequestMapping(value = "/consumer/dept/add")
     public boolean addDept(DeptEntity deptEntity) {
-        String url = REST_URL_PRIFIX + "/provider/dept/provider/dept/add";
+        String url = REST_URL_PRIFIX + "/provider/dept/add";
         return restTemplate.postForObject(url, deptEntity, Boolean.class);
     }
 
     @RequestMapping(value = "/consumer/dept/get/{id}")
     public DeptEntity getDept(@PathVariable("id") Long id) {
-        String url = REST_URL_PRIFIX + "/provider/dept/provider/dept/get/" + id;
+        String url = REST_URL_PRIFIX + "/provider/dept/get/" + id;
         return restTemplate.getForObject(url, DeptEntity.class);
     }
 
@@ -47,7 +47,7 @@ public class DeptConsumerController {
         return restTemplate.getForObject(url, List.class);
     }
 
-    @RequestMapping(value = "/consumer/dept/dicovery")
+    @RequestMapping(value = "/consumer/dept/discovery")
     public Object discovery() {
         String url = REST_URL_PRIFIX + "/provider/dept/discovery";
         return restTemplate.getForObject(url, Object.class);

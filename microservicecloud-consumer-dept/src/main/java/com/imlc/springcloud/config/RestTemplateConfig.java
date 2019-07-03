@@ -14,16 +14,6 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 public class RestTemplateConfig {
 
-    @Bean
-    public ClientHttpRequestFactory simpleClientHttpRequestFactory() {
-        SimpleClientHttpRequestFactory factory = new SimpleClientHttpRequestFactory();
-        // ms
-        factory.setReadTimeout(5000);
-        // ms
-        factory.setConnectTimeout(5000);
-        return factory;
-    }
-
     /**
      * SpringCloud Ribbon是基于Netflix Ribbon实现的一套"客户端"负载均衡的工具。
      * 理解：由客户端选择使用那个服务
@@ -37,4 +27,16 @@ public class RestTemplateConfig {
     public RestTemplate restTemplate(ClientHttpRequestFactory factory) {
         return new RestTemplate(factory);
     }
+
+    @Bean
+    public ClientHttpRequestFactory simpleClientHttpRequestFactory() {
+        SimpleClientHttpRequestFactory factory = new SimpleClientHttpRequestFactory();
+        // ms
+        factory.setReadTimeout(5000);
+        // ms
+        factory.setConnectTimeout(5000);
+        return factory;
+    }
+
+
 }
