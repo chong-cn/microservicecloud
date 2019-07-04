@@ -1,5 +1,8 @@
 package com.imlc.springcloud.config;
 
+import com.netflix.loadbalancer.IRule;
+import com.netflix.loadbalancer.RandomRule;
+import com.netflix.loadbalancer.RoundRobinRule;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,7 +15,7 @@ import org.springframework.web.client.RestTemplate;
  * @Date: 2019-07-02 11:50
  */
 @Configuration
-public class RestTemplateConfig {
+public class ConfigBean {
 
     /**
      * SpringCloud Ribbon是基于Netflix Ribbon实现的一套"客户端"负载均衡的工具。
@@ -36,6 +39,28 @@ public class RestTemplateConfig {
         // ms
         factory.setConnectTimeout(5000);
         return factory;
+    }
+
+    /**
+     * Ribbon负载均衡-算法（默认使用轮询算法）
+     *
+     * @Author: L.C
+     * @Date: 2019-07-04 11:01
+     */
+    @Bean
+    public IRule myRule() {
+        /**
+         * 轮询算法: RoundRobinRule与
+         * 随机算法: RandomRule
+         * 重试算法：RetryRule，微服务正常情况下与轮询算法效果一样，若故障，轮询多次仍故障时过滤掉故障服务
+         *
+         *
+         * @Author: L.C
+         * @Date: 2019-07-04 11:05
+         */
+        return new RoundRobinRule();
+
+
     }
 
 
