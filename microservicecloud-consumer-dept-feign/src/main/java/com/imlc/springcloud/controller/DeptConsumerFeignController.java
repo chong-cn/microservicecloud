@@ -16,7 +16,7 @@ import java.util.List;
  * @Date: 2019-07-02 12:21
  */
 @RestController
-public class DeptConsumerController {
+public class DeptConsumerFeignController {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
