@@ -1,6 +1,7 @@
 package com.imlc.springcloud.config;
 
 import com.netflix.loadbalancer.IRule;
+import com.netflix.loadbalancer.RetryRule;
 import com.netflix.loadbalancer.RoundRobinRule;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
@@ -10,6 +11,8 @@ import org.springframework.http.client.SimpleClientHttpRequestFactory;
 import org.springframework.web.client.RestTemplate;
 
 /**
+ * 配置Bean
+ *
  * @Auther: L.C
  * @Date: 2019-07-02 11:50
  */
@@ -57,7 +60,7 @@ public class ConfigBean {
          * @Author: L.C
          * @Date: 2019-07-04 11:05
          */
-        return new RoundRobinRule();
+        return new RetryRule();
 
 
     }
