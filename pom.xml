@@ -27,6 +27,7 @@
         <module>microservicecloud-eureka_03</module>
         <module>microservicecloud-provider-dept-02</module>
         <module>microservicecloud-provider-dept-03</module>
+        <module>microservicecloud-consumer-dept-feign</module>
     </modules>
 
 
