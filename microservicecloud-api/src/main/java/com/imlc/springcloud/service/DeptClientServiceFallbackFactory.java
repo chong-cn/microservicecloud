@@ -7,8 +7,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 /**
- * 服务降级处理
- *
+ * 服务降级：服务降级处理是在客户端完成的，与服务端无关
  * 注意：不要忘记在类桑添加@Component
  *
  * @Auther: L.C
