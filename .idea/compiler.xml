@@ -16,6 +16,7 @@
         <module name="microservicecloud-provider-dept-01" />
         <module name="microservicecloud-provider-dept-02" />
         <module name="microservicecloud-provider-dept-03" />
+        <module name="microservicecloud-provider-dept-hystrix-01" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

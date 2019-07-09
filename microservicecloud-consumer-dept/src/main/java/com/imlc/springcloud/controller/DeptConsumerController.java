@@ -41,9 +41,7 @@ public class DeptConsumerController {
     @SuppressWarnings("unchecked")
     @RequestMapping(value = "/consumer/dept/list")
     public List<DeptEntity> getDeptList() {
-        logger.info("部门消费者获取部门提供者列表");
         String url = REST_URL_PRIFIX + "/dept/list";
-        logger.info("请求的URL： " + url);
         return restTemplate.getForObject(url, List.class);
     }
 
