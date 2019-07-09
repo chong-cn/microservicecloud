@@ -59,9 +59,8 @@ public class DeptProviderController {
     public DeptEntity processHystrix_Get(@PathVariable("id") Long id) {
         DeptEntity dept = new DeptEntity();
         dept.setDeptNo(id);
-        dept.setDbName("ID：" + id + "没有对应的信息， null--@HystrixCommand");
+        dept.setDbName("ID:" + id + "没有对应的信息， null--@HystrixCommand");
         dept.setDbSource("no this database in MySQL");
-//        DeptEntity dept = new DeptEntity().setDeptNo(id).setDbName("ID：" + id + " 没有对应的信息， null--@HystrixCommand").setDbSource("no this database in musSQL");
         return dept;
     }
 
