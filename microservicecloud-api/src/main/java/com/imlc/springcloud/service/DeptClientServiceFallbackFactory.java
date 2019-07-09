@@ -27,7 +27,7 @@ public class DeptClientServiceFallbackFactory implements FallbackFactory<DeptCli
             public DeptEntity getDeptById(Long id) {
                 DeptEntity dept = new DeptEntity();
                 dept.setDeptNo(id);
-                dept.setDbName("ID:\"" + id + "\"没有对应的信息， null--@HystrixCommand");
+                dept.setDbName("ID:\"" + id + "\"没有对应的信息， Cpnsumer客户度提供的降级信息，此刻服务Provider已经关闭！");
                 dept.setDbSource("no this database in MySQL");
                 return dept;
             }
