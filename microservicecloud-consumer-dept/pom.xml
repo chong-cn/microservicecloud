@@ -21,15 +21,10 @@
             <version>${project.version}</version>
         </dependency>
 
+        <!-- Eureka相关 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <!-- 服务发现 -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-commons</artifactId>
         </dependency>
 
         <!-- Ribbon相关 -->
