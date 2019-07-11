@@ -20,7 +20,7 @@
             <version>${project.version}</version>
         </dependency>
 
-        <!-- 将微服务Depte Provider注册进Eureka -->
+        <!-- 将微服务DepteProvider注册进Eureka -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
