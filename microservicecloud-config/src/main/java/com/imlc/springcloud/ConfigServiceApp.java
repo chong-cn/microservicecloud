@@ -12,10 +12,10 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableConfigServer
-public class MicroServiceCloudConfigApp {
+public class ConfigServiceApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(MicroServiceCloudConfigApp.class, args);
+        SpringApplication.run(ConfigServiceApp.class, args);
     }
 
 }

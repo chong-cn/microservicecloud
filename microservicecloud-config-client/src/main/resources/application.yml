@@ -1,0 +1,4 @@
+#  微服务名称
+spring:
+  application:
+    name: microservicecloud-config-client                                     # 微服务名称 (相同服务提供者此名称始终不变)

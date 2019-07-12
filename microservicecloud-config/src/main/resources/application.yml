@@ -1,0 +1,22 @@
+# 日志位置
+LOG_PATH: /Users/Mac/LiuChong/Projects/SpringCloud/spring-cloud-atguigu/logs/config-log
+
+# 设定http监听端口
+server:
+  port: 3344
+
+# Eureka客户端配置
+eureka:
+  client:
+    register-with-eureka: false
+    service-url.defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka
+
+# Config配置
+spring:
+  application:
+    name: microservicecloud-config                                     # 微服务名称 (相同服务提供者此名称始终不变)
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:aolc/microservicecloud-config.git        # GitHub上Git仓库名称
