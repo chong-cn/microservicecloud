@@ -3,6 +3,8 @@
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservicecloud-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-config-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservicecloud-consumer-dept" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservicecloud-consumer-dept-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservicecloud-consumer-hystrix-dashboard" charset="UTF-8" />
@@ -12,6 +14,8 @@
     <file url="file://$PROJECT_DIR$/microservicecloud-provider-dept-01" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservicecloud-provider-dept-02" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservicecloud-provider-dept-03" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-provider-dept-hystrix" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservicecloud-provider-dept-hystrix-01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud-zuul-gateway" charset="UTF-8" />
   </component>
 </project>

@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="microservicecloud-api" />
+        <module name="microservicecloud-config" />
+        <module name="microservicecloud-config-client" />
         <module name="microservicecloud-consumer-dept" />
         <module name="microservicecloud-consumer-dept-feign" />
         <module name="microservicecloud-consumer-hystrix-dashboard" />
@@ -16,7 +18,8 @@
         <module name="microservicecloud-provider-dept-01" />
         <module name="microservicecloud-provider-dept-02" />
         <module name="microservicecloud-provider-dept-03" />
-        <module name="microservicecloud-provider-dept-hystrix-01" />
+        <module name="microservicecloud-provider-dept-hystrix" />
+        <module name="microservicecloud-zuul-gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
