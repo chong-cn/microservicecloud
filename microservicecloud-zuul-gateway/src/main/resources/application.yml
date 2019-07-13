@@ -1,0 +1,33 @@
+log-path: /Users/Mac/LiuChong/Projects/SpringCloud/spring-cloud-atguigu/logs/zuul-gateway-log
+log-pattern: '%d{HH:mm:ss.SSS} [%thread] %-5level %logger{60} - %msg%n'
+
+# 端口设置
+server:
+  port: 9527
+
+# 微服务名称和数据源
+spring:
+  application:
+    name: microservicecloud-zuul-gateway
+
+# Eureka客户端设置
+eureka:
+  client:                                                            # 本服务注册进eureka服务列表内
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: zuul-gateway.com
+    prefer-ip-address: true                                          # 访问路径显示IP地址
+
+zuul:
+  prefix: /aolc                                                   # 公共前缀
+  ignored-services: "*"                                           # 屏蔽所有微服务名称，使用*代替
+  routes:
+    mydept.serviceId: microservicecloud-dept                      # 要代理微服务
+    mydept.path: /mydept/**                                       # 代理的服务名称
+
+info:
+  app.name: aolc-microservicecloud
+  company.name: www.aolc.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$

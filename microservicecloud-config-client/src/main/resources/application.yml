@@ -1,3 +1,6 @@
+log-path: /Users/Mac/LiuChong/Projects/SpringCloud/spring-cloud-atguigu/logs/config-client-log
+log-pattern: '%d{HH:mm:ss.SSS} [%thread] %-5level %logger{60} - %msg%n'
+
 #  微服务名称
 spring:
   application:

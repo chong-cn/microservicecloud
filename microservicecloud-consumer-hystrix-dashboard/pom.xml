@@ -8,7 +8,7 @@
 
     <parent>
         <artifactId>microservicecloud</artifactId>
-        <groupId>com.imlc.springcloud</groupId>
+        <groupId>com.aolc.springcloud</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
@@ -16,7 +16,7 @@
 
         <!-- 自定义API -->
         <dependency>
-            <groupId>com.imlc.springcloud</groupId>
+            <groupId>com.aolc.springcloud</groupId>
             <artifactId>microservicecloud-api</artifactId>
             <version>${project.version}</version>
         </dependency>

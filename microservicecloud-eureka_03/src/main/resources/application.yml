@@ -1,0 +1,19 @@
+log-path: /Users/Mac/LiuChong/Projects/SpringCloud/spring-cloud-atguigu/logs/eureka-server-03-log
+log-pattern: '%d{HH:mm:ss.SSS} [%thread] %-5level %logger{60} - %msg%n'
+server:
+  port: 7003                                    # 端口号
+
+# 微服务设置
+spring:
+  application:
+    name: spring-cloud-eureka                   # 微服务名称
+
+# Eureka Server配置
+eureka:
+  instance:
+    hostname: eureka7003.com
+  client:
+    register-with-eureka: false                 # false：不向注册中心注册本服务
+    fetch-registry: false                       # false：本服务是注册中心，职责是维护服务实例，并不需要去检索服务
+    serviceUrl:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/      # 设置与Eureka Server交互的地址查询服务，注册服务依赖的地址

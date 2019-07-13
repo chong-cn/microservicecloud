@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.imlc.springcloud</groupId>
+    <groupId>com.aolc.springcloud</groupId>
     <artifactId>microservicecloud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -20,16 +20,16 @@
 
     <modules>
         <module>microservicecloud-api</module>
-        <module>microservicecloud-provider-dept-01</module>
         <module>microservicecloud-consumer-dept</module>
+        <module>microservicecloud-consumer-dept-feign</module>
+        <module>microservicecloud-consumer-hystrix-dashboard</module>
         <module>microservicecloud-eureka_01</module>
         <module>microservicecloud-eureka_02</module>
         <module>microservicecloud-eureka_03</module>
+        <module>microservicecloud-provider-dept-01</module>
         <module>microservicecloud-provider-dept-02</module>
         <module>microservicecloud-provider-dept-03</module>
-        <module>microservicecloud-consumer-dept-feign</module>
-        <module>microservicecloud-provider-dept-hystrix-01</module>
-        <module>microservicecloud-consumer-hystrix-dashboard</module>
+        <module>microservicecloud-provider-dept-hystrix</module>
         <module>microservicecloud-zuul-gateway</module>
         <module>microservicecloud-config</module>
         <module>microservicecloud-config-client</module>

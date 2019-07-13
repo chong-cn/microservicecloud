@@ -7,7 +7,7 @@
     <artifactId>microservicecloud-api</artifactId>
 
     <parent>
-        <groupId>com.imlc.springcloud</groupId>
+        <groupId>com.aolc.springcloud</groupId>
         <artifactId>microservicecloud</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>

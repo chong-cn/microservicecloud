@@ -1,0 +1,44 @@
+log-path: /Users/Mac/LiuChong/Projects/SpringCloud/spring-cloud-atguigu/logs/provider-dept-01-log
+log-pattern: '%d{HH:mm:ss.SSS} [%thread] %-5level %logger{60} - %msg%n'
+
+# 端口设置
+server:
+  port: 8001
+
+# 微服务名称和数据源
+spring:
+  application:
+    name: microservicecloud-dept
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource                        # 当前数据源操作类型
+    driverClassName: com.mysql.jdbc.Driver                          # MySQL驱动包
+    jdbc-url: jdbc:mysql://47.98.113.199:3306/cloud_db_01?useSSL=false           # 数据库名称
+    username: root
+    password: root
+    hikari:
+      auto-commit: true
+      connection-test-query: SELECT 1
+      connection-timeout: 20000
+      idle-timeout: 3000
+      max-lifetime: 1200                                             # 等待连接获取的最大超时时间
+      maximum-pool-size: 12                                          # 最大连接数
+      minimum-idle: 5                                                # 数据库连接池的最小维持连接数
+      pool-name: DatebookHikariCP                                    # 数据库连接池名称
+    test-while-idle: true
+    primary:
+      zeroDateTimeBehavior: convertToNull
+
+# Eureka客户端设置
+eureka:
+  client:                                                            # 客户端注册进eureka服务列表内
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: microservicecloud-dept8001
+    prefer-ip-address: true                                          # 访问路径显示IP地址
+
+info:
+  app.name: aolc-microservicecloud
+  company.name: www.aolc.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
