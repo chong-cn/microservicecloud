@@ -20,6 +20,8 @@
 
     <modules>
         <module>microservicecloud-api</module>
+        <module>microservicecloud-config</module>
+        <module>microservicecloud-config-client</module>
         <module>microservicecloud-consumer-dept</module>
         <module>microservicecloud-consumer-dept-feign</module>
         <module>microservicecloud-consumer-hystrix-dashboard</module>
@@ -31,8 +33,6 @@
         <module>microservicecloud-provider-dept-03</module>
         <module>microservicecloud-provider-dept-hystrix</module>
         <module>microservicecloud-zuul-gateway</module>
-        <module>microservicecloud-config</module>
-        <module>microservicecloud-config-client</module>
     </modules>
 
 

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date: 2019-07-12 14:16
  */
 @RestController
-public class ConfigClientApp {
+public class ConfigClientRest {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Value("${spring.application.name}")
