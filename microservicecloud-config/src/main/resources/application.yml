@@ -14,4 +14,19 @@ spring:
       server:
         git:
           uri: git@github.com:aolc/microservicecloud-config.git        # GitHub上Git仓库名称
-#          searchPaths: microservicecloud-config
+
+# Eureka客户端设置
+eureka:
+  client:                                                            # 客户端注册进eureka服务列表内
+    service-url:
+      defaultZone: http://eureka-01.com:7001/eureka/,http://eureka-02.com:7002/eureka/,http://eureka-03.com:7003/eureka/
+  instance:
+    instance-id: microservicecloud-config
+    prefer-ip-address: true
+
+
+info:
+  app.name: aolc-microservicecloud
+  company.name: www.aolc.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
