@@ -33,6 +33,7 @@
         <module>microservicecloud-provider-dept-03</module>
         <module>microservicecloud-provider-dept-hystrix</module>
         <module>microservicecloud-zuul-gateway</module>
+        <module>microservicecloud-config-eureka-client</module>
     </modules>
 
 
