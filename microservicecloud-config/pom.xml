@@ -24,7 +24,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
-        <!-- SPringCloud Config大管家 -->
+        <!-- SpringCloud Config大管家 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-server</artifactId>
