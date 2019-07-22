@@ -28,3 +28,15 @@ HELP.md
 ### VS Code ###
 .vscode/
 /.idea/
+microservicecloud-config-client/target/
+microservicecloud-config-dept-client/target/
+microservicecloud-config-eureka-client/target/
+microservicecloud-config/target/
+microservicecloud-consumer-dept-feign/target/
+microservicecloud-consumer-hystrix-dashboard/target/
+microservicecloud-eureka_02/target/
+microservicecloud-eureka_03/target/
+microservicecloud-provider-dept-02/target/
+microservicecloud-provider-dept-03/target/
+microservicecloud-provider-dept-hystrix/target/
+microservicecloud-zuul-gateway/target/
