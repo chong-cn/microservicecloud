@@ -1,10 +1,6 @@
 log-path: /Users/Mac/LiuChong/Projects/SpringCloud/spring-cloud-atguigu/logs/config-server-log
 log-pattern: '%d{HH:mm:ss.SSS} [%thread] %-5level %logger{60} - %msg%n'
 
-# 设定http监听端口
-server:
-  port: 3344
-
 # Config配置
 spring:
   application:
