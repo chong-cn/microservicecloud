@@ -46,30 +46,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/microservicecloud-config/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-574" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/microservicecloud-config/src/main/java/com/aolc/springcloud/ConfigServerApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -159,7 +140,6 @@
         <option value="$PROJECT_DIR$/microservicecloud-eureka_01/src/main/resources/logback-spring.xml" />
         <option value="$PROJECT_DIR$/microservicecloud-eureka_02/src/main/resources/logback-spring.xml" />
         <option value="$PROJECT_DIR$/microservicecloud-eureka_03/src/main/resources/logback-spring.xml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/application.yml" />
         <option value="$PROJECT_DIR$/microservicecloud-config-client/pom.xml" />
@@ -169,6 +149,7 @@
         <option value="$PROJECT_DIR$/microservicecloud-consumer-dept-feign/pom.xml" />
         <option value="$PROJECT_DIR$/microservicecloud-config/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/microservicecloud-config/src/main/java/com/aolc/springcloud/ConfigServerApp.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -217,49 +198,6 @@
               <item name="microservicecloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="microservicecloud" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="microservicecloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicecloud" type="462c0819:PsiDirectoryNode" />
-              <item name="microservicecloud-config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservicecloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicecloud" type="462c0819:PsiDirectoryNode" />
-              <item name="microservicecloud-config" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservicecloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicecloud" type="462c0819:PsiDirectoryNode" />
-              <item name="microservicecloud-config" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservicecloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicecloud" type="462c0819:PsiDirectoryNode" />
-              <item name="microservicecloud-config" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservicecloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicecloud" type="462c0819:PsiDirectoryNode" />
-              <item name="microservicecloud-config" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservicecloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicecloud" type="462c0819:PsiDirectoryNode" />
-              <item name="microservicecloud-config" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -295,7 +233,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ConfigServerApp">
+  <component name="RunManager" selected="Application.ConfigClientApp">
     <configuration name="ConfigClientApp" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.aolc.springcloud.ConfigClientApp" />
       <module name="microservicecloud-config-client" />
@@ -405,10 +343,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.40915594" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.40915594" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Alibaba Cloud Explorer" internal_type="SLIDING" order="1" show_stripe_button="false" side_tool="true" type="SLIDING" weight="0.33013698" />
       <window_info anchor="bottom" id="Alibaba Cloud View" order="2" side_tool="true" weight="0.3292683" />
@@ -417,7 +356,7 @@
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32891566" />
       <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49570817" weight="0.5048193" />
-      <window_info anchor="bottom" id="Debug" order="8" sideWeight="0.49946752" visible="true" weight="0.5421687" />
+      <window_info active="true" anchor="bottom" id="Debug" order="8" sideWeight="0.49946752" visible="true" weight="0.5421687" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" weight="0.32891566" />
@@ -653,13 +592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-01/src/main/java/com/aolc/springcloud/DeptProviderApp_01.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -787,10 +719,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-config/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="55">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-config/src/main/java/com/aolc/springcloud/ConfigServerApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -799,13 +743,10 @@
         <state relative-caret-position="-574" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-config/src/main/java/com/aolc/springcloud/ConfigServerApp.java">
+    <entry file="file://$PROJECT_DIR$/microservicecloud-config/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
