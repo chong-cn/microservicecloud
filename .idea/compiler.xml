@@ -9,6 +9,8 @@
         <module name="microservicecloud-api" />
         <module name="microservicecloud-config" />
         <module name="microservicecloud-config-client" />
+        <module name="microservicecloud-config-dept-client" />
+        <module name="microservicecloud-config-eureka-client" />
         <module name="microservicecloud-consumer-dept" />
         <module name="microservicecloud-consumer-dept-feign" />
         <module name="microservicecloud-consumer-hystrix-dashboard" />
