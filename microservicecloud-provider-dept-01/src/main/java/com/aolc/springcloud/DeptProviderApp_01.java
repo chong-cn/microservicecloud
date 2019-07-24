@@ -20,5 +20,10 @@ public class DeptProviderApp_01 {
         SpringApplication.run(DeptProviderApp_01.class, args);
     }
 
-
+    /*
+      @EnableDiscoveryClient与@EnableEurekaClient
+        共同点：均可让注册中心发现，扫描到该服务。
+        不同点：@EnableEurekaClient只适用于Eureka作为注册中心，@EnableDiscoveryClient可以是其他注册中心。
+      总结：如果选用的注册中心是eureka，那么就推荐@EnableEurekaClient，如果是其他的注册中心，那么推荐使用@EnableDiscoveryClient。
+     */
 }

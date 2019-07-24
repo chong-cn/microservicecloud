@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import java.util.List;
 
 /**
- * 1. Feign只在使便携Java Http客户端变得更容易
+ * 1. Feign使便携Java Http客户端变得更容易
  * 2. 熔断机制实现
  * <p>
  * 实现方式：接口 + 注解
