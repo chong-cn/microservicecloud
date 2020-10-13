@@ -13,7 +13,7 @@
         <maven.complier.source>1.8</maven.complier.source>
         <maven.complier.source>1.8</maven.complier.source>
         <java.version>1.8</java.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <lombok>1.16.22</lombok>
     </properties>
 
